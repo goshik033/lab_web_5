@@ -5,6 +5,6 @@
         $sql = "DELETE from `smth1` where id=$id";
         $conn->query($sql);
     }
-    header('location:/laba_web_4/index.php?page=list');
+    header('location:/laba_web_5/index.php?page=list');
     exit;
 ?>

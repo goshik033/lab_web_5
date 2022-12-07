@@ -10,7 +10,7 @@
 
   if($_SERVER["REQUEST_METHOD"]=='GET'){
     if(!isset($_GET['id'])){
-      header("location:laba_web_4/index.php?page=list");
+      header("location:laba_web_5/index.php?page=list");
       exit;
     }
     $id = $_GET['id'];
@@ -18,7 +18,7 @@
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
     while(!$row){
-      header("location: laba_web_4/index.php?page=list");
+      header("location: laba_web_5/index.php?page=list");
       exit;
     }
     $name=$row["name"];
